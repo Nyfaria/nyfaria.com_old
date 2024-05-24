@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+
+body {
+    /*background-color: #301934;*/
+    font-family: "Comic Sans MS", "Comic Sans", "sans-serif";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sidebar-open {
+    background-color: #301934;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 400px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-size: 10px;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */}
+
+.sidebar-logo {
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sidebar-title {
+    font-size: 35px;
+    margin: 10px auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.collapsed {
+    display: none;
 }
 
-.App-link {
-  color: #61dafb;
+.sidebar-button-open {
+    width: 100px;
+    position: absolute;
+    top: 0;
+    left: 420px;
+    font-size: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sidebar-button-close {
+    width: 100px;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    font-size: 40px;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+}
+
+.line-1 {
+    width:90%;
+    border-collapse: collapse;
+    border: 1px solid white;
+    margin: 10px auto 40px auto;
+}
+.sidebar-option {
+    font-size: 40px;
+    width: 400px;
+    margin-top:10px;
+    text-align: left;
+    height: 60px;
+}
+.sidebar-sub-option {
+    font-size: 30px;
+    float: left;
+    width: 400px;
+    height: 40px;
+    display: block;
+}
+.sidebar-option-open{
+    font-size: 40px;
+    width: 400px;
+    margin-top:10px;
+    text-align: left;
+    height: 140px;
+}
+.sidebar-option-close{
+    font-size: 40px;
+    width: 400px;
+    margin-top:10px;
+    text-align: left;
+    height: 60px;
+}
+.sidebar-sub-option:hover {
+    background-color: gray;
+}
+.float-right {
+    float: right;
+}
+.sidebar-option:hover {
+    background-color: gray;
 }
