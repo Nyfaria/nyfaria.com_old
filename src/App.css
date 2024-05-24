@@ -76,20 +76,6 @@ button {
     height: 40px;
     display: block;
 }
-.sidebar-option-open{
-    font-size: 40px;
-    width: 400px;
-    margin-top:10px;
-    text-align: left;
-    height: 140px;
-}
-.sidebar-option-close{
-    font-size: 40px;
-    width: 400px;
-    margin-top:10px;
-    text-align: left;
-    height: 60px;
-}
 .sidebar-sub-option:hover {
     background-color: gray;
 }
