@@ -69,6 +69,18 @@ button {
     text-align: left;
     height: 60px;
 }
+.sidebar-tutorials-close {
+ height: 60px;
+}
+.sidebar-tutorials-open {
+    height: 140px;
+}
+.sidebar-projects-close {
+ height: 60px;
+}
+.sidebar-projects-open {
+    height: 140px;
+}
 .sidebar-sub-option {
     font-size: 30px;
     float: left;
