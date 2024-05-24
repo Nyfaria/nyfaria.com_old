@@ -18,7 +18,7 @@ const projectList: Promise<FullData>[] = data.projects.map(
     }
 )
 
-const Group = ()=> {
+const Group = () => {
     const {state} = useSideBarState();
     const [projects, setProjects] = React.useState<FullData[]>([])
     React.useEffect(() => {
@@ -32,7 +32,9 @@ const Group = ()=> {
 
     return (
         <div className={state.collapsed ? "home-open" : "home-close"}>
-            <h2> Team Projects</h2>
+            <div className={"header"}>
+                <h2> Team Projects</h2>
+            </div>
 
             <div className="project-list">
                 {

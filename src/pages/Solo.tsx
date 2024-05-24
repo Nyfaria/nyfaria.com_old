@@ -18,7 +18,7 @@ const projectList: Promise<FullData>[] = data.projects.map(
     }
 )
 
-const Solo = ()=> {
+const Solo = () => {
     const {state} = useSideBarState();
     const [projects, setProjects] = React.useState<FullData[]>([])
     React.useEffect(() => {
@@ -32,8 +32,9 @@ const Solo = ()=> {
 
     return (
         <div className={state.collapsed ? "home-open" : "home-close"}>
-            <h2> Solo/Collab Projects</h2>
-
+            <div className={"header"}>
+                <h2> Solo/Collab Projects</h2>
+            </div>
             <div className="project-list">
                 {
                     projects.map(
@@ -72,7 +73,9 @@ const Solo = ()=> {
                                 <div key={value.cfData.data.slug} className={"project-box"}>
                                     <div className={"project-name"}>
                                         {value.project.name ? value.project.name : value.cfData.data.name}
-                                        <a target={"_blank"} href={value.cfData.data.links.websiteUrl}className={"no-decoration"}><FaExternalLinkAlt className={"float-right"} /></a>
+                                        <a target={"_blank"} href={value.cfData.data.links.websiteUrl}
+                                           className={"no-decoration"}><FaExternalLinkAlt
+                                            className={"float-right"}/></a>
                                     </div>
                                     {authors ? <div className="project-authors">With {authors}</div> : null}
                                     <div className={"line-2"}></div>

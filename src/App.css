@@ -204,11 +204,70 @@ button {
 @media screen and (max-width: 800px) {
     .project-list {
         grid-template-columns: 100%;
+        padding-top: 100px;
+        position: relative;
+    }
+
+    .header {
+        position: fixed;
+        top:0;
+        font-size: 20px;
+        width: 100vw;
+        border-bottom: white solid;
+        background-color: #46006e;
+        z-index: 100;
     }
     .home-open {
         width: 100vw;
         left: 0;
-
+    }
+    .home-close {
+        width: 100vw;
+        left: 0;
+    }
+    h2{
+    }
+    .home-desc {
+        font-size: 25px;
+        padding-top: 100px;
+        position: relative;
+        width: 90vw;
+    }
+    .sidebar-open {
+        width: 50%;
+        z-index: 101;
+    }
+    .sidebar-button-open {
+        left: 53%;
+        z-index: 102;
+    }
+    .sidebar-option {
+        width: 100%;
+        font-size: 25px;
+        height: 35px;
+    }
+    .sidebar-sub-option {
+        width: 100%;
+        font-size: 20px;
+        height: 28px;
+    }
+    .sidebar-tutorials-open {
+        height: 91px;
+    }
+    .sidebar-tutorials-close {
+        height: 35px;
+    }
+    .sidebar-projects-open {
+        height: 91px;
+    }
+    .sidebar-projects-close {
+        height: 35px;
+    }
+    .socials {
+        top: calc(100vh - 60px);
+    }
+    .sidebar-title {
+        font-size: 15px;
     }
 }
 

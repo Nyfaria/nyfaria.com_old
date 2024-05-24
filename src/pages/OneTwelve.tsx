@@ -5,7 +5,9 @@ const OneTwelve = () => {
     const {state} = useSideBarState();
     return (
         <div className={state.collapsed ? "home-open" : "home-close"}>
-            <h2>1.12.2 Modding Tutorials</h2>
+            <div className={"header"}>
+                <h2>1.12.2 Modding Tutorials</h2>
+            </div>
             <div className={"home-desc"}>
                 <p>Stop modding for ancient versions that are dying out contrary to unpopular opinions.</p>
                 <p>Now go mod for 1.20+ and you'll get people to actually play your mods.</p>
